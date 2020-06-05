@@ -1,0 +1,16 @@
+{
+    "name": "tsupstate",
+    "version": "1.0.0",
+    "description": "checks if TS3 server is up and returns statuscode",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "kalinka",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "helmet": "^3.22.0"
+    }
+}
