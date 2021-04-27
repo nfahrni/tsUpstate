@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:14-alpine
 
 WORKDIR /usr/src/app
 
@@ -8,4 +8,7 @@ RUN npm install
 
 COPY . .
 
-CMD [ "node", "server.js" ]
+RUN npm run build
+EXPOSE 3000
+
+CMD [ "node", "dist/server.js" ]
